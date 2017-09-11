@@ -57,7 +57,6 @@ public class RepoListPresenter implements RepoListContract.Presenter {
                     }else{
                         Log.e(TAG, "Error on load data", throwable);
                         view.showError(throwable.getMessage());
-                        view.finishLoading();
                         view.removeProgressbar();
                     }
                 });
